@@ -1,0 +1,48 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Фабрики");
+?><?$APPLICATION->IncludeComponent(
+	"bitrix:news.detail",
+	"factories",
+	Array(
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"USE_SHARE" => "N",
+		"AJAX_MODE" => "N",
+		"IBLOCK_TYPE" => "text",
+		"IBLOCK_ID" => "11",
+		"ELEMENT_ID" => "",
+		"ELEMENT_CODE" => "factories",
+		"CHECK_DATES" => "N",
+		"FIELD_CODE" => array(),
+		"PROPERTY_CODE" => array("*"),
+		"IBLOCK_URL" => "",
+		"SET_TITLE" => "N",
+		"SET_BROWSER_TITLE" => "N",
+		"BROWSER_TITLE" => "-",
+		"SET_META_KEYWORDS" => "N",
+		"META_KEYWORDS" => "-",
+		"SET_META_DESCRIPTION" => "N",
+		"META_DESCRIPTION" => "-",
+		"SET_STATUS_404" => "N",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"USE_PERMISSIONS" => "N",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_GROUPS" => "Y",
+		"PAGER_TEMPLATE" => ".default",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "Страница",
+		"PAGER_SHOW_ALL" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N"
+	),
+false
+);?> <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
